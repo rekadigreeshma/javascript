@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table id="myTable">
+	<tbody>
+		<th>Course Name</th>
+		<th>Course Number</th>
+		<th>Course Fee</th>
+		<th>Place</th>
+	</tbody>
+ 
+<script type="text/javascript">
+	let courses = [{
+		"course Name":'Html',
+		"Cno":'1234',
+		"Course Fee":'567',
+		"Place":'dwp'
+	},
+	{
+		"name":'CSS',
+		"Cno":'1234',
+		"fee":'567',
+		"Place":'dwp'
+	},
+	{
+		"name":'Javascript',
+		"Cno":'1234',
+		"fee":'567',
+		"Place":'dwp'
+	}]
+
+	for(i=0;i<=courses.length-1;i++)
+	{
+	let tr = document.createElement('tr');
+	let td1 = document.createElement('td')
+	let td2 = document.createElement('td')
+	let td3 = document.createElement('td')
+	let td4 = document.createElement('td')
+	td1.innerText = couses[i].name
+	td2.innerText = courses[i].Cno
+	td3.innerText = courses[i].fee
+	td4.innerText = courses[i].Place
+	tr.append(td1)
+	tr.append(td2)
+	tr.append(td3)
+	tr.append(td4)
+	document.getElementById('mytable').append(tr)
+}
+
+</script>
+</table>
+
+
+
+
+</body>
+</html>
